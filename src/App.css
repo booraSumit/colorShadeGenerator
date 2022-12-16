@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.card_wrapper {
+  margin: auto;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-auto-flow: column;
+  height: 90vh;
+  padding: 0 1rem;
+}
+
+.clipboardCopy {
+  background-color: gold;
+  color: green;
+  display: none;
+  left: 0;
+  letter-spacing: 0.5px;
+  padding: 0.2rem;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 233;
+}
+
+.btn {
+  background-color: gold;
+  border-radius: 2px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  margin: 0.1rem 1.5rem;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .card_wrapper {
+    grid-template-columns: repeat(2, auto);
+    grid-auto-flow: unset;
+  }
+}

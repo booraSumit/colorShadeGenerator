@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  display: inline-block;
+  flex-grow: 1;
+  margin: 1.5rem 0.1rem;
+  box-sizing: border-box;
+}
+
+.card_action {
+  background-color: gold;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.2rem;
+}
+
+.action_btn {
+  cursor: pointer;
+}
+
+.card_color {
+  border-radius: 2px;
+  height: 100%;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+input {
+  background-color: gold;
+  border-radius: 2px;
+  border: none;
+  box-sizing: border-box;
+  color: rgb(26, 24, 24);
+  cursor: pointer;
+  display: block;
+  letter-spacing: 0.5px;
+  outline: none;
+  padding: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  width: 100%;
+}
+
+/* ########### shade ########## */
+
+.shade_wrapper {
+  display: flex;
+  flex-direction: column;
+  left: -100%;
+  max-width: 360px;
+  overflow: scroll;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: all 0.5s ease;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.shade_color {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0.2rem 0.5rem; */
+  position: relative;
+}
+
+.shade_name {
+  flex-grow: 1;
+  padding: 0.3rem 0;
+  border-radius: unset;
+}
+
+.fa-info-circle {
+  position: absolute;
+  right: 0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fa-arrow-left {
+  margin-right: 1rem;
+}
+
+.shade_window_decoration {
+  background-color: gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0.4rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.shade_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.shade_wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
